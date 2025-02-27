@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    
+    <div class="login p-8 bg-white/30 rounded-lg drop-shadow-md w-full max-w-md backdrop-blur-sm mx-8">
+        
+        <h1 class="login-head text-2xl text-center text-black font-extrabold mb-5 decoration-none">LOGIN</h1>
+
+        <form action="">
+            <div class="login-head flex justify-center p-2">
+                <label for="email">
+                    <input type="email" placeholder="Email:" class="login-email 
+                    w-full focus:outline-none focus:border-blue-500 justify-around p-1 border-b-2 border-gray-300" id="email" required>
+                </label>
+            </div>
+
+            <div class="login-head flex justify-center">
+                <label for="password" class="mb-8">
+                    <input type="password" placeholder="password"  class="login-password w-full focus:outline-none focus:border-blue-500 justify-around p-1 border-b-2 border-gray-300" id="password" required>
+                </label>
+            </div>
+            
+            <div class="login-submit w-full flex justify-center ">
+                <button onclick="storedata()" type="submit" class="border rounded-2xl w-min pt-1 pb-1 pl-3 pr-3 flex bg-green-600 shadow-lg">login</button>
+            </div>
+
+        </form>
+    </div>
+   <script src="main.js"></script>
+</body>
+</html>
